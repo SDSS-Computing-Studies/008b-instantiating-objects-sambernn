@@ -100,6 +100,7 @@ class pet:
 
 def main():
     while True:
+        print("\n")
         print("Would you like to?")
         print("1.Enter a new pet")
         print("2.Retrieve a pet")
