@@ -89,7 +89,7 @@ class pet:
         self.breed = input("Enter the breed:")
         self.name = input("Enter the name:")
         self.owner = input("Enter the owner:")
-        self.birthdate = int(input("Enter the birthdate:"))
+        self.birthdate = input("Enter the birthdate:")
 
     def displayPet(self):
         output = str(self.animal) + " " + str(self.breed) + " " + str(self.name) + " " + str(self.owner) + " " + self.birthdate
