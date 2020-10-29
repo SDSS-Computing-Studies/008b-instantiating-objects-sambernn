@@ -74,6 +74,8 @@ Shih-tzu is owned by Christy
 (10 points) 
 """
 
+pets = []
+
 class pet:
     animal = None
     breed = None
@@ -96,43 +98,30 @@ class pet:
         print( output)
         print( outputLength * "=")
 
-def command(self):
-    print("Would you like to?")
-    print("1.Enter a new pet")
-    print("2.Retrieve a pet")
-    print("3.Exit")
-    command = input("Choose a number[1-3]:")
-    print("")
-    return int(command)
-
-def doCommand(self,command):
-    if command == 1:
-        pets.append(pet())
-    elif command == 2:
-        self.retrieve()
-    elif command == 3:
-        print("Exitting program")
-        exit()
-
-def retrieve(self):
-    find = input("Enter the name of pet you want to find:")
-    for i in pets:
-        index
-    if True:
-        pets[index]self.displayPet()
-    else:
-        print("Pet not found")
-        break
-    
-def run(self):
-    while True:
-        self.command()
-        self.doCommand()
-
-pets = []
-
 def main():
-    run()
+    while True:
+        print("Would you like to?")
+        print("1.Enter a new pet")
+        print("2.Retrieve a pet")
+        print("3.Exit")
+
+        command = int(input("Choose a number[1-3]:"))
+
+        if command == 1:
+            a = pet()
+            pets.append(a)
+
+        elif command == 2:
+            find = input("Enter the name of pet you want to find:")
+            length = len(pets)
+            for i in range(0,length):
+                name = pets[i].name
+                if find == name:
+                    pets[i].displayPet()
+
+        elif command == 3:
+            print("Exitting program")
+            break       
 
 main()
 
