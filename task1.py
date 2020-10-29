@@ -92,7 +92,7 @@ class pet:
         self.birthdate = input("Enter the birthdate: ")
 
     def displayPet(self):
-        output = str(self.animal) + " " + str(self.breed) + " " + str(self.name) + " " + str(self.owner) + " " + self.birthdate
+        output = str(self.name) + " " + str(self.animal) + " " + str(self.breed) + " " + str(self.owner)
         outputLength = len(output)
         print( outputLength * "=")
         print( output)
@@ -100,7 +100,6 @@ class pet:
 
 def main():
     while True:
-        print("\n")
         print("Would you like to?")
         print("1.Enter a new pet")
         print("2.Retrieve a pet")
