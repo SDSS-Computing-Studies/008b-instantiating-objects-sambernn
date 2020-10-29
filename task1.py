@@ -85,11 +85,11 @@ class pet:
 
     def __init__(self):
         print("\n")
-        self.animal = input("Enter the animal:")
-        self.breed = input("Enter the breed:")
-        self.name = input("Enter the name:")
-        self.owner = input("Enter the owner:")
-        self.birthdate = input("Enter the birthdate:")
+        self.animal = input("Enter the animal: ")
+        self.breed = input("Enter the breed: ")
+        self.name = input("Enter the name: ")
+        self.owner = input("Enter the owner: ")
+        self.birthdate = input("Enter the birthdate: ")
 
     def displayPet(self):
         output = str(self.animal) + " " + str(self.breed) + " " + str(self.name) + " " + str(self.owner) + " " + self.birthdate
@@ -105,7 +105,7 @@ def main():
         print("2.Retrieve a pet")
         print("3.Exit")
 
-        command = int(input("Choose a number[1-3]:"))
+        command = int(input("Choose a number[1-3]: "))
 
         if command == 1:
             a = pet()
